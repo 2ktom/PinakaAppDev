@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PinakaAppDev</string>
+    <string name="login">Log In</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="sel">or</string>
+    <string name="strCreate">Create Account</string>
+</resources>

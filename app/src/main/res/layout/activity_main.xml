@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_bg">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtUser"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-175dp"
+        android:fontFamily="@font/dream_school"
+        android:paddingLeft="78dp"
+        android:text="Log-In"
+        android:textColor="@color/white"
+        android:textSize="65dp" />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="265dp"
+        android:background="@drawable/text_bg"
+        android:hint="  Username"
+        android:paddingLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/txtPw"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/txtUser"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_bg"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:id="@+id/forgotPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPw"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:text="@string/forgot"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotPw"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btnedge"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/orTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/sel"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createaccBtn"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/orTxt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dblue_bg"
+        android:text="@string/strCreate" />
+
+</RelativeLayout>
