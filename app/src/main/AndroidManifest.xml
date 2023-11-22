@@ -13,6 +13,24 @@
         android:theme="@style/Theme.PinakaAppDev"
         tools:targetApi="31">
         <activity
+            android:name=".SetAlias"
+            android:exported="false" />
+        <activity
+            android:name=".GameLobby"
+            android:exported="false" />
+        <activity
+            android:name=".FinalPage"
+            android:exported="false" />
+        <activity
+            android:name=".difficult_gameplay"
+            android:exported="false" />
+        <activity
+            android:name=".average_gameplay"
+            android:exported="false" />
+        <activity
+            android:name=".easy_gameplay"
+            android:exported="false" />
+        <activity
             android:name=".gameplay"
             android:exported="false" />
         <activity
