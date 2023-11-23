@@ -7,36 +7,35 @@
     tools:context=".GameLobby"
     android:background="@drawable/gradient_bg">
 
-    <TextView
-        android:id="@+id/textTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:fontFamily="@font/dream_school"
-        android:text="Waiting for players to connect..."
-        android:textColor="@color/white"
-        android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/conNum"
+
+    <ListView
+        android:id="@+id/ListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:background="@drawable/btnedge"
+        android:id="@+id/startBtn"
         android:layout_centerHorizontal="true"
-        android:text="Number of players connected:"
-        android:fontFamily="@font/dream_school"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:layout_below="@id/textTitle"/>
+        android:layout_marginTop="500sp"/>
+
+    <!--
+
     <TextView
         android:id="@+id/playerCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dream_school"
         android:text="0/2"
-        android:layout_below="@id/player2"
+        android:layout_below="@id/textTitle"
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"
         android:textSize="30sp"/>
+
     <TextView
         android:id="@+id/player1"
         android:layout_width="80sp"
@@ -58,6 +57,28 @@
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/player1"/>
+        <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/dream_school"
+        android:text="Waiting for players to connect..."
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/conNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Number of players connected:"
+        android:fontFamily="@font/dream_school"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/textTitle"/> -->
+
+
 
 
 </RelativeLayout>
