@@ -78,6 +78,7 @@
         android:layout_height="48dp"
         android:layout_below="@+id/orTxt"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@drawable/dblue_bg"
         android:text="@string/strCreate" />

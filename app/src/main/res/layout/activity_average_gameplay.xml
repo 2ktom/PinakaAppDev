@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".average_gameplay"
+    android:background="@drawable/gradient_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/top_layout"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:id="@+id/QuestionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textColor="#F6F4EB"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/QuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/QuestionTxt"
+        android:text="0"
+        android:textSize="50dp"
+        android:textColor="#F6F4EB"
+        android:layout_marginLeft="55dp"/>
+
+    <TextView
+        android:id="@+id/TimeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textColor="#F6F4EB"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/TimeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TimeTxt"
+        android:text="0"
+        android:textSize="50dp"
+        android:textColor="#f6f4eb"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/ScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textSize="20dp"
+        android:textColor="#f6f4eb"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="298dp"/>
+
+    <TextView
+        android:id="@+id/ScoreNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50dp"
+        android:textColor="#f6f4eb"
+        android:layout_below="@id/ScoreTxt"
+        android:layout_marginLeft="310dp" />
+
+
+    <TextView
+        android:id="@+id/WordToGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textSize="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/FirstBtn"
+        android:text="A"
+        android:textSize="15dp"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WordToGuess"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnedge"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SecondBtn"
+        android:text="B"
+        android:textSize="15dp"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/FirstBtn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnedge"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ThirdBtn"
+        android:text="C"
+        android:textSize="15dp"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/SecondBtn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnedge"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/FourthBtn"
+        android:text="D"
+        android:textSize="15dp"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/ThirdBtn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnedge"
+        />
+
+</RelativeLayout>
