@@ -42,12 +42,6 @@ public class SetAlias extends AppCompatActivity{
 
 		firebaseDatabase = FirebaseDatabase.getInstance();
 
-
-
-		SharedPreferences preferences = getSharedPreferences("myPreferences", 0);
-
-		playerName = preferences.getString("playerName", "");
-
 		if(!playerName.equals("")){
 			playerRef = firebaseDatabase.getReference("players/" +playerName);
 			addEventListner();
@@ -59,7 +53,7 @@ public class SetAlias extends AppCompatActivity{
 			public void onClick(View v){
 				// log the player in
 				playerName = aliasName.getText().toString();
-				aliasName.setText("");
+
 				if(!playerName.equals("")){
 					confirmName.setText("LOGGING IN");
 					confirmName.setEnabled(false);
@@ -67,6 +61,9 @@ public class SetAlias extends AppCompatActivity{
 					addEventListner();
 					playerRef.setValue("");
 				}
+				else {
+            Toast.makeText(SetAlias.this, "Please enter a valid nickname", Toast.LENGTH_SHORT).show();
+        }
 			}
 		});
 	}
@@ -77,13 +74,10 @@ public class SetAlias extends AppCompatActivity{
 			public void onDataChange(
 					@NonNull DataSnapshot snapshot){
 				if(!playerName.equals("")){
-
-
 					SharedPreferences preferences = getSharedPreferences("myPreferences", 0);
 					SharedPreferences.Editor editor = preferences.edit();
 					editor.putString("playerName", playerName);
 					editor.apply();
-
 					startActivity(new Intent(getApplicationContext(), GameLobby.class));
 					finish();
 				}

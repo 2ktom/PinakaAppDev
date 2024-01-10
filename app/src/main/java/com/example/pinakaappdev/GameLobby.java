@@ -3,6 +3,7 @@ package com.example.pinakaappdev;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Path;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Button;
@@ -128,5 +130,11 @@ public class GameLobby extends AppCompatActivity{
         public void onCancelled(@NonNull DatabaseError error){
             }
         });
+
+
+       /* ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setCancelable(true);
+        progressDialog.setCancelMessage("Waiting for opponent's turn to finish...");
+        progressDialog.show();*/
     }
 }
