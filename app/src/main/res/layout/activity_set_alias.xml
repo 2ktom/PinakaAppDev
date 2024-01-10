@@ -27,7 +27,7 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
-        android:text="Set your name:"
+        android:text="Set your nickname:"
         android:fontFamily="@font/dream_school"
         android:layout_marginTop="160sp"
         />

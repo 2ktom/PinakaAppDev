@@ -27,4 +27,17 @@
         android:layout_below="@+id/ScoreTxt"
         android:layout_centerHorizontal="true"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCtn"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ScoreResult"
+        android:text="Continue"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/btnedge"
+        />
+
+
+
 </RelativeLayout>
